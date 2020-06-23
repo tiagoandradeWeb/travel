@@ -32,7 +32,7 @@ p{color: var(--text-color);}
 	.header{padding: 15px 15px;}
 	.mobile-menu{display: block; cursor: pointer; transition: .9s; margin-left: auto;}
 	.mobile-close{display: none; cursor: pointer; transition: .5s; margin-left: auto;}
-	.nav-main{display: flex; flex-direction: column; justify-content: flex-start; position: absolute; top: 0; left: -200%; bottom: 0; width: 250px; background: var(--title-color); transition: .5s ease-out; overflow-y: auto;}
+	.nav-main{display: flex; flex-direction: column; justify-content: flex-start; position: fixed; top: 0; left: -200%; bottom: 0; width: 250px; background: var(--title-color); transition: .5s ease-out; overflow-y: auto;}
 	.nav-main ul{flex-direction: column; order: 2; margin-top: 20px; width: 100%; text-align: center;}
 	.nav-main ul li{display: block; width: 100%; padding: 10px; margin-bottom: 5px;}
 	.nav-main ul li a{color: #fff; width: 100%; display: block;}
