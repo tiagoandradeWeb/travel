@@ -77,8 +77,8 @@ p{color: var(--text-color);}
 }
 
 /*Slider*/
-.swiper-container{width: 100%; height: 80vh;}
-.swiper-slide{width: 100%; height: 100%; background-image: url(../assets/background.jpg); background-position: center center; background-size: cover; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;}
+.swiper-container{width: 100%; height: 500px; margin-bottom: 0; padding-bottom: 0;}
+.swiper-slide{width: 100%; height: 100%; background-image: url(../assets/background.jpg); background-position: center center; background-size: cover; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; margin-bottom: 0;}
 .swiper-slide:nth-child(2){background-image: url(../assets/background2.jpg);}
 .swiper-slide:nth-child(3){background-image: url(../assets/background3.jpg);}
 .swiper-slide h1{Color:#fff; font-size: 4em;}
@@ -89,5 +89,48 @@ p{color: var(--text-color);}
 @media (max-width: 930px){
 	.swiper-slide h1{font-size: 2em;}
 	.swiper-slide p{font-size: 1em; letter-spacing: 3px;}
+}
+
+/*Cards*/
+.cards{position: absolute; bottom: 10px; z-index: 2; right: 50%; transform: translateX(50%); display: flex; flex-direction: row; margin-top: 0;}
+.cards .card-box{display: flex;}
+.cards .card-item{width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--text-color); padding:25px 15px; text-align: center; height: 130px;}
+.cards .card-item .icon{color:#fff; font-size: 2em;}
+.cards .card-item h2{color:#fff; font-size: 1em; margin: 10px 0px;}
+.cards .card-item p{color:#fff; font-size: .8em;}
+.cards .card-item:nth-child(2){height: 150px; background: var(--primary-color); top:-10px; position: relative;}
+
+@media (max-width: 930px){
+	.cards{position: relative; bottom: 0; margin: 0;}
+	.cards .card-box{display: block;  width: 100%;}
+	.cards .card-item:nth-child(2){height: 130px; top:0;}
+	.cards .card-item{width: 100%;}
+}
+
+/*Seção destaque*/
+.spotlight{position: relative; height:400px; background-image: url(../assets/portodegalinhas_header.jpg); background-position: center center; background-size: cover;}
+.spotlight-box{height: 100%; display: flex; justify-content: center; flex-direction: column; padding-left: 30px;}
+.spotlight-box h2{font-size: 2.3em; color: #fff; margin-top: 40px;}
+.spotlight-box p{font-size: 1em; color: #fff;  letter-spacing: 2px;}
+.spotlight-info{display: flex;}
+.spotlight-info .prices{border-right: 2px solid #fff; padding-right: 15px; margin-top: 20px;}
+.spotlight-info .prices p{font-size: .7em;}
+.spotlight-info .prices .price{font-size: .9em; font-weight: 600;}
+.spotlight-info .prices .price span{font-size: 1.9em; font-weight: 600;}
+.spotlight-info .prices .right{text-align: right;}
+.spotlight-info .more-info{margin-top: 20px; margin-left: 15px;}
+.spotlight-info .more-info p{font-size: .7em;}
+.spotlight-info .more-info .icons{color: #fff; font-size: 1.7em; margin-top: 5px;}
+.fa-plus{font-size: .6em;}
+.spotlight-box .info{font-size: .8em; margin-top: 20px;}
+
+@media (max-width: 930px){
+	.spotlight{background-position: left;}
+	.spotlight-box{padding: 30px;}
+	.spotlight-box h2{font-size: 1.9em;}
+	.spotlight-box p{font-size: .7em;}
+	.spotlight-info .more-info .icons{color: #fff; font-size: 1em; margin-top: 5px;}
+	.spotlight-info .prices .price{font-size: .6em; font-weight: 600;}
+	.spotlight-info .prices .price span{font-size: 1.6em; font-weight: 600;
 }
 
