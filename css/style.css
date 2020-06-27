@@ -54,7 +54,6 @@ p{color: var(--text-color);}
 
 /*Login*/
 .login{width: 100%; height: 100%; background: rgba(0,0,0,0.9); position: absolute; top:-200%; top: 0; right: 0; transition: .3s; display: none; z-index: 20000;}
-.login-container{}
 .login-box{width: 450px; height: auto; background: #fff; padding:20px; display: flex; flex-direction: column; position: absolute; left: 50%; transform: translateX(-50%); top:10%;}
 .login-box .avatar{font-size: 3em; color: var(--primary-color); text-align: center; margin-bottom: 20px;}
 .login-box label{color:var(--text-color);}
@@ -92,7 +91,7 @@ p{color: var(--text-color);}
 }
 
 /*Cards*/
-.cards{position: absolute; top:83%;  z-index: 2; right: 50%; transform: translateX(50%); display: flex; flex-direction: row; margin-top: 0;}
+.cards{position: absolute; top:-50px;  z-index: 2; right: 50%; transform: translateX(50%); display: flex; flex-direction: row; margin-top: 0;}
 .cards .card-box{display: flex;}
 .cards .card-item{width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--text-color); padding:25px 15px; text-align: center; height: 130px;}
 .cards .card-item .icon{color:#fff; font-size: 2em;}
@@ -106,20 +105,10 @@ p{color: var(--text-color);}
 	.cards .card-item:nth-child(2){height: 130px; top:0;}
 	.cards .card-item{width: 100%;}
 }
-@media (min-width: 1500px){
-	body{}
-	.cards{position: relative; top: 0;}
-	.cards .card-box{width: 100%; position: relative; top: 0;}
-	.cards .card-item{width: 100%; height: 350px;}
-	.cards .card-item:nth-child(2){height: 350px; top:0;}
-	.cards .card-item .icon{font-size: 5em;}
-	.cards .card-item h2{color:#fff; font-size: 2em; margin: 10px 0px;}
-	.cards .card-item p{color:#fff; font-size: 1.7em;}
-	
-}
 
 /*Seção destaque*/
-.spotlight{position: relative; height:400px; background-image: url(../assets/portodegalinhas_header.jpg); background-position: center center; background-size: cover;}
+.spotlight{position: relative;}
+.spotlight-main{position: relative; height:400px; background-image: url(../assets/portodegalinhas_header.jpg); background-position: center center; background-size: cover;}
 .spotlight-box{height: 100%; display: flex; justify-content: center; flex-direction: column; padding-left: 30px;}
 .spotlight-box h2{font-size: 2.3em; color: #fff; margin-top: 40px;}
 .spotlight-box p{font-size: 1em; color: #fff;  letter-spacing: 2px;}
@@ -142,6 +131,35 @@ p{color: var(--text-color);}
 	.spotlight-box p{font-size: .7em;}
 	.spotlight-info .more-info .icons{color: #fff; font-size: 1em; margin-top: 5px;}
 	.spotlight-info .prices .price{font-size: .6em; font-weight: 600;}
-	.spotlight-info .prices .price span{font-size: 1.6em; font-weight: 600;
+	.spotlight-info .prices .price span{font-size: 1.6em; font-weight: 600;}
 }
+/*Formulario de serviços*/
+.form-services{background: #F6F6F6; position: relative; width: 100%;}
+.form-services-box{background: #fff; position: relative; top: -20px; width: 80%; margin: auto; padding: 20px; border-radius: 3px;}
+.form-services-box ul{display: flex;}
+.form-services-box ul li a{margin-right: 20px; color: var(--title-color); transition: .3s;}
+.form-services-box ul li a:hover,.form-services-box ul li a.linkActive{color: var(--primary-color);}
+
+.packages{display: flex; flex-wrap: wrap;  width: 100%; margin-top: 30px;}
+.packages .form-wraper{box-shadow: none; border: 1px solid #c2c2c2;padding-right: 15px;}
+.packages .form-wraper .icon{color: var(--primary-color);}
+.packages label{color: var(--text-color); font-size: .9em;}
+.btn-service{width: 100%; display: block; text-align: center; margin-top: 27px; background: var(--primary-color); color: #fff; font-size: 1.2em; padding: 9px 0px; transition: .3s; border-radius: 3px;}
+.btn-service:hover{background: var(--title-color);}
+.packages .col{width: 25%; padding-right: 20px}
+.packages .col:nth-child(4){padding-right: 0;}
+.packages .col-mini{width: 17%; margin-right: 20px; margin-top: 30px;}
+.packages,.hotels{opacity:0; }
+.packages.active,.hotels.active{opacity: 1;}
+
+@media (max-width: 930px){
+	.form-services-box{width: 95%;}
+	.form-services-main{flex-direction: column;}
+	.form-services-main .col{width: 100%; margin-bottom: 20px; margin-left: 0; padding-right: 0;}
+	.form-services-main .col:nth-child(4){order: 6;}
+	.packages .col-mini{width: 100%; margin: 0; margin-bottom: 20px;}
+	.form-services-box ul{overflow-x: auto; padding: 20px;}
+}
+
+	
 

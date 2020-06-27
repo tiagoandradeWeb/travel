@@ -47,6 +47,27 @@ function menuMobile(){
 	});
 }
 
+// Serviços
+function searchServices(){
+	var btnServices = document.querySelectorAll(".menu-services ul li a");
+	var content = document.querySelector(".form-services-main");
+	
+	btnServices.forEach(function(items){
+		items.addEventListener("click", function(event){
+			event.preventDefault();
+			btnServices.forEach(function(item){
+				item.classList.remove("linkActive");
+			})// ativar classes
+			items.classList.add("linkActive");
+			const target = this.getAttribute("data-target");
+			const activeBox = document.getElementById("target");
+			console.log(activeBox);
+		}); //evento
+		
+	}); //forEach
+}
+						
 search();
 login();
 menuMobile();
+searchServices();
