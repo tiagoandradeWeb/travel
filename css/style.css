@@ -181,11 +181,8 @@ p{color: var(--text-color);}
 .offer-all a{text-align: center; display: block; color:var(--text-color); font-size: 1em; margin-top: 100px;}
 .offer-all a:hover{color: var(--title-color);}
 
-@media (max-width: 550px){
+@media (max-width: 930px){
 	.offers .container{padding: 0px 15px;}
 	.offers-box{grid-template-columns: 1fr;}
 	.offer-all a{font-size: .7em;}
 }
-
-	
-
