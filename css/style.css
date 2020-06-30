@@ -177,11 +177,11 @@ p{color: var(--text-color);}
 .offers-box .offer-items .description{margin-top: 15px; font-size: 1.1em;}
 .offers-box .offer-items .description .icon{color: var(--primary-color);}
 .offers-box .box-price{margin-top: 20px;}
-.offers-box .box-price span{color: var(--primary-color); font-weight: bold; font-size: 1.8em; margin:5px 0 5px 15px; display: block;}
+.offers-box .box-price span{color: var(--primary-color); font-weight: bold; font-size: 1em; margin:5px 0 5px 15px; display: block;}
 .offer-all a{text-align: center; display: block; color:var(--text-color); font-size: 1em; margin-top: 100px;}
 .offer-all a:hover{color: var(--title-color);}
 
-@media (max-width: 930px){
+@media (max-width: 550px){
 	.offers .container{padding: 0px 15px;}
 	.offers-box{grid-template-columns: 1fr;}
 	.offer-all a{font-size: .7em;}
