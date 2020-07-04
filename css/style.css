@@ -162,8 +162,9 @@ p{color: var(--text-color);}
 }
 
 /*Offers*/
-.offers{background: #F6F6F6; margin-top: 100px;}
-.offers .container{ padding: px 0;}
+.offers{background: #F6F6F6; padding: 100px 0px;}
+.offers.two{padding-top: 0;}
+.offers .container{}
 .offers h2{color: var(--title-color);}
 .offers h2::after{content: ""; position:relative; display: block; width: 45px; height: 5px; margin: 10px 0; background: var(--primary-color);}
 .offers h3{color: var(--title-color); font-weight: 100; font-size: 1em;}
@@ -181,8 +182,41 @@ p{color: var(--text-color);}
 .offer-all a{text-align: center; display: block; color:var(--text-color); font-size: 1em; margin-top: 100px;}
 .offer-all a:hover{color: var(--title-color);}
 
-@media (max-width: 930px){
+@media (max-width: 550px){
 	.offers .container{padding: 0px 15px;}
 	.offers-box{grid-template-columns: 1fr;}
 	.offer-all a{font-size: .7em;}
+}
+
+/*featured-hotels*/
+.featured-hotels{background: #fff; padding: 100px 0px;}
+.featured-hotels h2{color: var(--title-color);}
+.featured-hotels h2::after{content: ""; position:relative; display: block; width: 45px; height: 5px; margin: 10px 0; background: var(--primary-color);}
+.featured-hotels h3{color: var(--title-color); font-weight: 100; font-size: 1em;}
+.hotels-box{width: 100%; display: flex; height: 400px; align-items: center;}
+.hotels-box p{font-size: 3em; font-weight: 700; color: var(--title-color);}
+.hotels-box .col-one{width: 50%;}
+.hotels-box .col-two{width: 50%; text-align: right;}
+
+.hotels-items{width: 100%; overflow: hidden;}
+.hotels-items .swiper-slide{height: 360px; background-image: url(../assets/hotelbahia.jpg); background-position: center center; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end;}
+.hotels-items .swiper-slide:nth-child(2){background-image: url(../assets/florianopolis.jpg);}
+.hotels-items .swiper-slide:nth-child(3){background-image: url(../assets/hoteisrecife.jpg);}
+.hotels-items .swiper-slide:nth-child(4){background-image: url(../assets/hotelNatal.jpeg);}
+.hotels-items .swiper-slide:nth-child(5){background-image: url(../assets/hotelFortaleza.webp);}
+.hotel-description{position: absolute; bottom: 0; right: 0; left: 0; display: flex; justify-content: center; flex-direction: column; width: 100%; height: 150px; padding: 20px; background: rgba(0,0,0,0.3); align-items: center;}
+.hotel-description h3{color: #fff; font-size: 1.3em; font-weight: bold; margin-bottom: 10px;}
+.hotel-description .icons{display: flex; align-items: center; font-size: 1.5em; color: #fff; margin-bottom: 10px;}
+.hotel-description .fa-plus{margin: 0 10px; font-size: .5em;}
+.hotel-description p{font-size: .8em; color: #fff; letter-spacing: 0; font-weight: 100; margin: 0;}
+.nav-slider{font-size: 1.5em; color: var(--text-color); display: flex; justify-content: flex-end; margin-top: -20px;}
+.button-next, .button-prev {cursor: pointer; padding: 10px;}
+
+@media (max-width: 550px){
+	.featured-hotels .container{padding: 0 15px;}
+	.hotels-box{flex-direction: column; width: 100%;}
+	.hotels-box .col-one{width: 100%;}
+	.hotels-box .col-two{width: 100%;}
+	.hotels-box .col-one p{font-size: 1.8em; margin:30px 0px; color: var(--text-color;)}
+	.nav-slider{margin-top:90px;}
 }
